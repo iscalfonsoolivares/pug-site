@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+.cache
+database.json
+# Local Netlify folder
+.netlify
+public/common/*.html
+public/*.html
+public/lib

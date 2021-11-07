@@ -9,7 +9,7 @@
     "start": "concurrently npm:dev:*",
     "build:html": "pug -O \"{activeGA: true}\" ./src -o ./public",
     "build": "npm run build:html && npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{lodash,lodash.*,bootstrap/dist}/**/*\" public/lib -C",
+    "copy-libs": "cpx \"node_modules/{waypoints/lib/,bootstrap/dist}/**/*\" public/lib -C",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,7 +18,8 @@
   "dependencies": {
     "bootstrap": "^5.1.3",
     "cpx": "^1.5.0",
-    "pug-cli": "^1.0.0-alpha6"
+    "pug-cli": "^1.0.0-alpha6",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "concurrently": "^6.3.0",

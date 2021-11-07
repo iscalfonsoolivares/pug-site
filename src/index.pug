@@ -1,9 +1,15 @@
 extends common/layout
 
+block head
+    - const pageTitle = 'Páginas Web en San Luis Potosí :: inicio'
+    - const pageDescription = 'Páginas Web en San Luis Potosí, Marketing Digital Potosino, Sitios Web SLP, Desarrollo Web en San Luis México.'
+    include common/headtags
+
 block content
     h1 hello world
     p Welcome to this site
 
 block scripts
+    script(src='lib/waypoints/lib/noframework.waypoints.min.js')
     script.  
         console.log('hello world');
